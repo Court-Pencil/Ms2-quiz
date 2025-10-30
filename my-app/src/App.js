@@ -1,6 +1,6 @@
-import Home from './components/Homepage'
+import Home from './components/Menu'
 import './App.css';
-import Quiz from './components/Quiz'
+import Quiz from './components/Questions'
 
 function App() {
   return (
