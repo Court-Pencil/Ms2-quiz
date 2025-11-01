@@ -1,11 +1,9 @@
-import React, {useEffect, useState} from "react";
-function Home (){
+import React from 'react'
 
-     
-
-    return(
-        <div>Start</div>
-    );
+export default function Menu() {
+  return (
+    <div>
+      Menu
+    </div>
+  )
 }
-
-export default Home;

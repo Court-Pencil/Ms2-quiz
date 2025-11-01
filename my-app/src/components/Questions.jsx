@@ -1,7 +1,10 @@
+
 import React from 'react'
 
-export default function Quiz(){
-    return(
-        <div>Quiz</div>
-    )
+export default function Questions() {
+  return (
+    <div>
+      Questions
+    </div>
+  )
 }
