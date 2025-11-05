@@ -33,17 +33,29 @@ export default function Questions() {
       setShowScore(true);   
     }
 
-
-
-
-   }
+   } 
 
 
 
   return (
 
-    <div>
-      Questions
+    <div className='question-section'>
+      <h1>Video Game Trivia</h1>
+      <div className='question-text'>
+        <div>{questions[currentQuestion]?.question}</div>
+      </div>
+      
+      <div className='question-count'>
+        <span>{currentQuestion + 1} out of {questions.length}</span>
+      </div>
+      <div className='next-btn'>
+        {currentQuestion < questions.length && (
+          <button onClick={() => setCurrentQuestion(currentQuestion + 1)}>Next Question</button>
+        )}
+      </div>
+      
     </div>
+    
+
   )
 }
