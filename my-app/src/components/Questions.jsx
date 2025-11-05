@@ -9,9 +9,8 @@ export default function Questions() {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
 
    const fetchQuizQuestions = async () => {
-      const response = await fetch(`https://opentdb.com/api.php?amount=10&category=15&type=multiple&difficulty=${difficulty}`);
+      const response = await fetch(`https://opentdb.com/api.php?amount=10&category=15&type=multiple`);
       const data = await response.json();
-      console.log(data);
       setQuestions(data.results);
    };
     useEffect(() => {
