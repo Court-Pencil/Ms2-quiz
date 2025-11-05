@@ -7,6 +7,8 @@ export default function Questions() {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] =   useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState([]);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+
 
    const fetchQuizQuestions = async () => {
       const response = await fetch(`https://opentdb.com/api.php?amount=10&category=15&type=multiple`);
@@ -44,13 +46,17 @@ export default function Questions() {
       <div className='question-text'>
         <div>{questions[currentQuestion]?.question}</div>
       </div>
-      
+      <div className='answer-section'>
+        
+      </div>
       <div className='question-count'>
         <span>{currentQuestion + 1} out of {questions.length}</span>
       </div>
       <div className='next-btn'>
         {currentQuestion < questions.length && (
-          <button onClick={() => setCurrentQuestion(currentQuestion + 1)}>Next Question</button>
+          <button  onClick={() => setCurrentQuestion(currentQuestion + 1)}
+      disabled={!selectedAnswer}
+>Next Question</button>
         )}
       </div>
       
