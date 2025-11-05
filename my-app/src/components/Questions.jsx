@@ -16,6 +16,30 @@ export default function Questions() {
     useEffect(() => {
        fetchQuizQuestions();
    }, []);  
+
+   const handleAnswerOptionClick = (isCorrect, answer) => {
+    if (isCorrect) {
+      setScore((prevScore) => prevScore + 1);
+    } 
+     
+    const updatedSelectedAnswers = [...selectedAnswers]
+    updatedSelectedAnswers[currentQuestion] = answer;
+    setSelectedAnswers(updatedSelectedAnswers);
+
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion)
+    } else {
+      setShowScore(true);   
+    }
+
+
+
+
+   }
+
+
+
   return (
 
     <div>
