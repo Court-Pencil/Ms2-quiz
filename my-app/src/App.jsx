@@ -8,6 +8,12 @@ import Start from './components/Start';
 
 export default function App() { 
   const [stage, setStage] = React.useState('start')
+  const [results, setResults] = React.useState(null);
+  const handleGameEnd = (results) => {
+    console.log('Game ended with results:', results);
+    setResults(results);
+    setStage('results');
+  }
   return (
     <div className="App" style={{ backgroundColor: '#09095e',
       minHeight: '100vh',
@@ -22,8 +28,8 @@ export default function App() {
         <Start onStart={() => setStage('quiz')} />
       
       )}
-      {stage === 'quiz' && <Questions onGameEnd={() => setStage('results')} />}
-       {stage === 'results' && <EndScreen onStart={() => setStage('start')} />}
+      {stage === 'quiz' && <Questions onGameEnd={handleGameEnd} />}
+       {stage === 'results' && <EndScreen onRestart={() => setStage('start')} results={results} />}
     </div>
   )
 }
