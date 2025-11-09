@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Press+Start+2P&display=swap');
 
+@import "./node_modules/nes.css/css/nes.css"
+
+
 
 .App {
-  background-color: #09095e;
+  background-color: #09095e !important;
   overflow: hidden;
   flex-direction: column;
     display: flex;
@@ -12,10 +15,103 @@
     font-size: 1rem;
     color: #FFFF00;
     text-align: center;
-    padding: 20px;
+    padding: 5rem;
     height: 100vh;
 }
 
 .start-btn {
-  margin-top: 20px;
+  margin-top: 5rem;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.start-btn:hover {
+   background: #8d929c;
+}
+
+
+.start-h1 {
+  margin: 4rem;
+  font-size: 3rem;
+  
+}
+
+.quiz-container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.question-counter {
+   margin: 20px 0;
+   font-weight: bold;
+}
+
+.question-text h2 {
+   font-size: 24px;
+   margin: 20px 0;
+}
+
+.answer-buttons {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin: 20px 0;
+}
+
+.answer-btn {
+   padding: 15px;
+   font-size: 16px;
+   border: 2px solid #ddd;
+   border-radius: 8px;
+   background: white;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+.answer-btn:hover:not(:disabled) {
+   background: #f0f0f0;
+   transform: scale(1.02);
+}
+
+.answer-btn:disabled {
+   cursor: not-allowed;
+}
+
+.answer-btn.correct {
+   background: #22c55e;
+   color: white;
+   border-color: #22c55e;
+}
+
+.answer-btn.incorrect {
+   background: #ef4444;
+   color: white;
+   border-color: #ef4444;
+}
+
+.next-btn {
+   width: 100%;
+   padding: 15px;
+   font-size: 18px;
+   font-weight: bold;
+   background: #3b82f6;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   margin-top: 20px;
+}
+
+.next-btn:hover {
+   background: #2563eb;
+}
+
+.score-display {
+   text-align: center;
+   margin-top: 20px;
+   font-size: 18px;
+   font-weight: bold;
 }
