@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-/* === GLOBAL RESET === */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,7 +28,7 @@ body {
   min-height: 100vh;
 }
 
-/* === APP CONTAINER === */
+
 .App {
   display: flex;
   flex-direction: column;
@@ -42,7 +41,7 @@ body {
   overflow: hidden;
 }
 
-/* === START SCREEN === */
+
 .start-screen {
   display: flex;
   flex-direction: column;
@@ -70,7 +69,7 @@ body {
   text-shadow: 0 0 0.6rem #00ffff;
 }
 
-/* === START BUTTON === */
+
 .start-btn {
   background-color: #000020;
   color: #00ffff;
@@ -90,7 +89,7 @@ body {
   box-shadow: 0 0 1.5rem #00ffff;
 }
 
-/* === QUIZ CONTAINER === */
+
 .quiz-container {
   max-width: 60rem;
   width: 100%;
@@ -113,7 +112,7 @@ body {
   }
 }
 
-/* === QUESTION COUNTER === */
+
 .question-counter {
   color: #00ffff;
   font-size: 1.2rem;
@@ -121,7 +120,7 @@ body {
   margin-top: 1.25rem;
 }
 
-/* === QUESTION TEXT === */
+
 .question-text h2 {
   font-size: 1.5rem;
   color: #ffff33;
@@ -129,7 +128,7 @@ body {
   line-height: 1.5;
 }
 
-/* === ANSWER BUTTONS === */
+
 .answer-buttons {
   display: flex;
   flex-direction: column;
@@ -175,7 +174,7 @@ body {
   box-shadow: 0 0 1rem #ef4444;
 }
 
-/* === NEXT BUTTON === */
+
 .next-btn {
   width: 100%;
   padding: 1.2rem;
@@ -196,7 +195,7 @@ body {
   box-shadow: 0 0 1.5rem #ffff33;
 }
 
-/* === SCORE DISPLAY === */
+
 .score-display {
   text-align: center;
   margin-top: 2.5rem;
@@ -211,7 +210,7 @@ body {
   color: #ffff33;
 }
 
-/* === END SCREEN === */
+
 .end-screen {
   display: flex;
   flex-direction: column;
@@ -225,7 +224,7 @@ body {
   animation: fadeIn 1s ease;
 }
 
-/* Title */
+
 .end-title {
   font-size: 2.4rem;
   color: #ffff33;
@@ -237,7 +236,7 @@ body {
   line-height: 3rem;
 }
 
-/* Score box */
+
 .score-box {
   border: 0.3rem solid #00ffff;
   border-radius: 1rem;
@@ -265,14 +264,14 @@ body {
   margin: 2rem 1rem;
 }
 
-/* Encouragement message */
+
 .end-message {
   font-size: 1.4rem;
   color: #00ffff;
   margin-bottom: 3rem;
 }
 
-/* Restart button */
+
 .restart-btn {
   background-color: #000020;
   color: #00ffff;
@@ -293,7 +292,7 @@ body {
   transform: scale(1.05);
 }
 
-/* === Animations === */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -316,7 +315,7 @@ body {
 }
 
 
-/* === RESPONSIVE BREAKPOINTS === */
+
 @media (min-width: 600px) {
   .start-h1 {
     font-size: 3rem;
