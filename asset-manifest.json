@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Court-Pencil/Ms2-quiz/static/css/main.f0040cf3.css",
+    "main.js": "/Court-Pencil/Ms2-quiz/static/js/main.6c3be2ec.js",
+    "static/js/453.117b0875.chunk.js": "/Court-Pencil/Ms2-quiz/static/js/453.117b0875.chunk.js",
+    "index.html": "/Court-Pencil/Ms2-quiz/index.html",
+    "main.f0040cf3.css.map": "/Court-Pencil/Ms2-quiz/static/css/main.f0040cf3.css.map",
+    "main.6c3be2ec.js.map": "/Court-Pencil/Ms2-quiz/static/js/main.6c3be2ec.js.map",
+    "453.117b0875.chunk.js.map": "/Court-Pencil/Ms2-quiz/static/js/453.117b0875.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0040cf3.css",
+    "static/js/main.6c3be2ec.js"
+  ]
+}
