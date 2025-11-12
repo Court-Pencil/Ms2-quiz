@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Video-Game-Trivia/static/css/main.f0040cf3.css",
+    "main.js": "/Video-Game-Trivia/static/js/main.0f6ae7e4.js",
+    "static/js/453.117b0875.chunk.js": "/Video-Game-Trivia/static/js/453.117b0875.chunk.js",
+    "index.html": "/Video-Game-Trivia/index.html",
+    "main.f0040cf3.css.map": "/Video-Game-Trivia/static/css/main.f0040cf3.css.map",
+    "main.0f6ae7e4.js.map": "/Video-Game-Trivia/static/js/main.0f6ae7e4.js.map",
+    "453.117b0875.chunk.js.map": "/Video-Game-Trivia/static/js/453.117b0875.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0040cf3.css",
+    "static/js/main.0f6ae7e4.js"
+  ]
+}
