@@ -1,6 +1,6 @@
 import React from 'react'
 import Questions from './components/Questions'
-// script.js
+
 
 import './App.css'
 import EndScreen from './components/EndScreen';
