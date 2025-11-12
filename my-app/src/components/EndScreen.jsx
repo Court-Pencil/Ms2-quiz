@@ -15,14 +15,14 @@ export default function EndScreen({ onRestart, results }) {
     message = "Keep practicing!";
   }
   return (
-    <div>
-      <h1>Quiz Completed!</h1>
-      <h2>{message}</h2>
-      <p>
+    <div className="end-screen"> 
+      <h1 className="end-title">Quiz Completed!</h1>
+      <h2 className="end-message">{message}</h2>
+      <p className="score-text">
         Your Score: {score} out of {total}
       </p>
-      <p>Percentage: {percentage}%</p>
-      <button onClick={onRestart}>Restart Quiz</button>
+      <p className="percentage">Percentage: {percentage}%</p>
+      <button className="restart-btn" onClick={onRestart}>Restart Quiz</button>
     </div>
   );
 }
