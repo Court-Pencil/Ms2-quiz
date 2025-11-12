@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/Court-Pencil/Ms2-quiz",
+  "homepage": "https://github.com/Court-Pencil/Video-Game-Trivia/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
